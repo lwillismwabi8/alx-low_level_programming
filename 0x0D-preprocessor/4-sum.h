@@ -1,6 +1,6 @@
-#ifndef OBJECT_LIKE_MACRO_H
-#define OBJECT_LIKE_MACRO_H
+#ifndef SUM_H
+#define SUM_H
 
-#define SIZE 1024
+#define SUM(x, y) ((x) + (y))
 
 #endif
