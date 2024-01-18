@@ -1,23 +1,29 @@
 #include "main.h"
 
 /**
-**_strncpy - function tha concatenate two strings
-* @dest : place where append de src string
-* @src: place of the string for append
-* @n: n is number until print src
-* Return: pointer to dest
-*/
-
+  * _strncpy - The main function that copies
+  *
+  * @src: Function parameter 0ne
+  *
+  * @dest: Function parameter two
+  *
+  * @n: Function parameter three
+  *
+  * Return: dest
+  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i;
+	int k = 0;
 
-	for (i = 0; i < n && src[i] != '\0'; i++)
+	while (k < n && src[k] != '\0')
 	{
-		dest[i] = src[i];
+	dest[k] = src[k];
+	k++;
 	}
-
-	for (; i < n; i++)
-		dest[i] = '\0';
+	while  (k < n)
+	{
+	dest[k] = '\0';
+	k++;
+	}
 	return (dest);
 }

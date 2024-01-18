@@ -1,2 +1,1 @@
-0x18.c 
-this is a project on dynamic libraries
+This a README.md file for 0x18-dynamic libraries
